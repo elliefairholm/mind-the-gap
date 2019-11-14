@@ -8,16 +8,14 @@ is where the engine is).
 The number of carriages in a train can vary from 1 to 26 (i.e. 'A' to 'Z').
 
 Example:
-countMissingCarriages("ABC") //should return 0 
-countMissingCarriages("ABD") //should return 1 
-countMissingCarriages("BCF") //should return 3 
+countMissingCarriages("ABC") //should return 0
+countMissingCarriages("ABD") //should return 1
+countMissingCarriages("BCF") //should return 3
 */
 
 function countMissingCarriages(train) {
-
-  //WRITE YOUR CODE HERE!!🤘
-
+  let lastLetter = train.charCodeAt(train.length -1);
+  return lastLetter - 64 - train.length;
 }
 
 module.exports = countMissingCarriages;
-
